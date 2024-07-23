@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/stylecss.css">
+    <script src="/js/funtion.js"></script>
 </head>
 <body>
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-    </ul>
+    <div id="nav"></div>
+    <div id="enter"></div>
+    <div id="form"></div>
+<script>
+       window.onload = function () {
+            includeHTML('/html/nav.html', 'nav');
+            includeHTML('/html/enter.html', 'enter');
+            includeHTML('/html/form.html', 'form');}
+</script>
 </body>
 </html>
