@@ -1,5 +1,9 @@
+const connection = require('../config/database')
+
+
 const getHomePage =(req, res)=>{
-    res.render('../views/test.ejs');
+    return res.render('home.ejs');
+
 }
 const getPage = (req, res)=>{
     res.render('../views/sample.ejs')
