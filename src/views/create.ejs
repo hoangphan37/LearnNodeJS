@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/stylecss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="/js/funtion.js"></script>
 </head>
+
 <body>
     <div id="nav"><%- include('commponents/nav') %></div>
     <div id="enter"><%- include('commponents/enter') %></div>
-    <div id="form"><%- include('commponents/table') %></div>
-
+    <div id="form"><%- include('commponents/form') %></div>
+    <!-- <script>
+        
+        const path = require("path");
+        console.log("423");
+        window.onload = function () {
+            includeHTML("../../commponents/nav.html" , 'nav');
+            includeHTML('/commponents/enter.html', 'enter');
+            includeHTML('/commponents/form.html', 'form');
+        }
+    </script> -->
 </body>
+
 </html>

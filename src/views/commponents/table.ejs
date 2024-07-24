@@ -1,0 +1,28 @@
+<div>
+    <table class="w3-table-all">
+        <thead>
+            <tr class="w3-light-grey w3-hover-red">
+                <th>Email</th>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+
+        <% data.forEach((element)=> { %>
+            <tr class="w3-hover-green">
+                <td>
+                    <%= element.email %>
+                </td>
+                <td>
+                    <%= element.name %>
+                </td>
+                <td>
+                    <%= element.city %>
+                </td>
+            </tr>
+
+    <% });%>
+    </table>
+    
+</div>

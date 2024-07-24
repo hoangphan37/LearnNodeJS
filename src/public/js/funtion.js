@@ -1,4 +1,4 @@
-function includeHTML(url, elementId) {
+function includeHTML(url, elementId, callback) {
   fetch(url)
     .then((response) => {
       if (!response.ok) {
@@ -8,6 +8,7 @@ function includeHTML(url, elementId) {
     })
     .then((data) => {
       document.getElementById(elementId).innerHTML = data;
+      if (callback) callback();
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);

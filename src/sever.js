@@ -3,15 +3,15 @@ const path = require("path");
 const app = express();
 const configViewEngine = require("./config/viewEngine");
 const webRoutes = require("./routes/web");
-const connection = require("./config/database")
-require("dotenv").config();
+const connection = require("./config/database");
+const bodyBase = require("./config/bodyBase");
 
+require("dotenv").config();
 
 const port = process.env.PORT;
 const host_name = process.env.HOST_NAME;
 
-//static file: clien chi xem dc thong tin trong file nay
-
+bodyBase(app, express);
 configViewEngine(app, express);
 app.use("/", webRoutes);
 
